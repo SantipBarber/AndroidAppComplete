@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataQueryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/queryTitle"
+            android:text="Consultar datos"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+            <Spinner
+            android:id="@+id/querySpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textSize="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/inputIdQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textSize="12dp"
+            android:hint=" -- Introduce el ID del item deseado -- "
+            android:layout_marginTop="10dp"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idConsultaTitle"
+                    android:text="Identificador"
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idConsultaResult"
+                    android:text=""
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    android:gravity="right"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameConsultaTitle"
+                    android:text="Nombre"
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameConsultaResult"
+                    android:text=""
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    android:gravity="right"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueConsultaTitle"
+                    android:text="Valor: "
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueConsultaResult"
+                    android:text=""
+                    android:padding="3dp"
+                    android:fontFamily="monospace"
+                    android:textSize="16dp"
+                    android:gravity="right"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/queryDataBtn"
+            android:text="CONSULTAR"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

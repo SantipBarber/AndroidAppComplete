@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4AF1FF1F"
+    android:padding="20dp"
+    tools:context=".Activity2">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="#2AFFFFFF"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tituloDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Elige una opción:"
+            android:textColor="#FFF000F0"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_margin="30dp"
+            android:fontFamily="monospace"
+            android:text="Crear tabla"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_margin="30dp"
+            android:fontFamily="monospace"
+            android:text="Insertar datos"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_margin="30dp"
+            android:fontFamily="monospace"
+            android:text="Consultar datos"
+            android:textSize="18dp" />
+
+        <!--<Button
+            android:id="@+id/btnOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Opcional"
+            android:fontFamily="monospace"
+            android:textSize="18dp"
+            android:layout_rowSpan="1"/> -->
+    </GridLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
